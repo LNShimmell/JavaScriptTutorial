@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="js/Technology.js"></script>
+</head>
+<body onload="load();">
+
+        <table class="table table-sm" >
+                
+                    <td>Id: </td><td><input id="pId" type="number"></td>
+                    <td>Name: </td><td><input id="pName" type="text"></td>
+
+                    <td>Difficulty: </td>
+                    <td>
+                        <select id="pDifficulty">
+                            <option  value="E">Easy</option>
+                            <option  value="M">Medium</option>
+                            <option value="H">Hard</option>
+                        </select>
+                    </td>
+                    
+
+               
+        
+            </table>
+            <div style="text-align: center"><button onclick="add();" type="button" class="btn btn-primary">Add</button><button onclick="edit();" type="button" class="btn btn-secondary">Edit</button></div>
+
+            <table class="table table-sm table-striped">
+                <thead class="thead-dark">
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Difficulty
+                    </th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+    
+</body>
+</html>
