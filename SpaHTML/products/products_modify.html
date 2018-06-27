@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="products_JS/products_modify.js"></script>
+</head>
+<body>
+        <nav id="Nav" class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="products_new.html">Create  product<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="products_find.html">Find a product<span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item active">
+                                <a class="nav-link" href="products_list.html">Product List <span class="sr-only">(current)</span></a>
+                              </li>
+                  </ul>
+                  
+                </div>
+              </nav>
+              <div ><input id="getid" type="number"><button type="button" class="btn btn-primary" onclick="find();" placeholder="Search by ID">Find</button></div>
+        <table class="table table-sm table-striped">
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <td><input type="number" id="id" readonly ></td>
+                    </tr>
+                    <tr>
+                    <th>
+                       Description 
+                    </th>
+                    <td><input type="text" id="description"></td></tr>
+                    <tr>
+                    <th>
+                        Cost
+                    </th><td><input type="number" id="unitcost"></td></tr>
+                    <tr>
+                    <th>
+                        Stock
+                    </th>
+                    <td>
+                        <input type="number" id="stock">
+                    </td></tr>
+                    <tr>
+                                    <th>
+                        Service
+                    </th>
+                    <td><input type="checkbox" id="isservice"></td></tr>
+                
+                           
+                    <tr><td colspan="2"><button   type="button" class="btn btn-primary" onclick="modify();">Edit</button></td></tr>
+                    <tr><td colspan="2"><button type="button" class="btn btn-danger" onclick="Delete();"> Delete</button> </td></tr>
+                    
+                
+        
+        
+        
+            </table>
+    
+</body>
+</html>
